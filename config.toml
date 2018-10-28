@@ -16,7 +16,7 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     info = "#coding #electrotechnics" # Author's job title or info.
     description = "Radim Kozák's personal website" # Site description.
     keywords = "blog,developer,electrotechnics" # Site keywords.
-    avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+    avatarurl = "images/avatar.png" # Contain the path of the optionnal avatar in the static folder.
 
     footercontent = "" # Add footer content
 
