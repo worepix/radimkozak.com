@@ -108,3 +108,6 @@ This article is going to be about my utility named [websitefromgithub](https://g
     ```
     pm2 save
     ```
+
+# Conclusion
+The script is in frequency you set checking changes by cloning just git folder by command `git clone --no-checkout <your repository>` and compares the `/.git/refs/heads/master` file to your fully downloaded repository in folder. If this hex isn't same, it will clone the hall website repository, build it with your specific command and move to your specific folder. If it is same, it just do nothing, wait to next specific time and do the all thing again.
