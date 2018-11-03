@@ -20,7 +20,7 @@ This article is going to be about my utility named [websitefromgithub](https://g
 3. Add privileges to you website folder location. For example to folder /var/www/html
     
     ```
-    sudo chown wfg -R /var/www/html
+    sudo chown wfg:wfg -R /var/www/html
     ```
 
 4. Make sure you have installed <a href="https://nodejs.org" target="_blank">Node.js</a> and <a href="http://pm2.keymetrics.io/" target="_blank">PM2</a>. If not - install them
@@ -57,7 +57,7 @@ This article is going to be about my utility named [websitefromgithub](https://g
     nano settings.json
     ```
 
-    ```json
+    ```
     {
         "GitHub": "",
         "web_location": "/var/www/html",
@@ -69,31 +69,31 @@ This article is going to be about my utility named [websitefromgithub](https://g
 
     **GitHub**: link to GitHub repository without .git in the end. Example:
     
-    ```json
+    ```
     "GitHub": "https://github.com/worepix/radimkozak.com"
     ```
 
     **web_location**: folder where final exported website will be deployed, default <a href="https://httpd.apache.org/" target="_blank">Apache</a> webserver is /var/www/html. Example:
     
-    ```json
+    ```
     "web_location": "/var/www/html"
     ```
 
     **exported_folder**: folder that makes your framework after build command with exported website. Default <a href="https://gohugo.io/" target="_blank">Hugo</a> folder is public. Example:
     
-    ```json
+    ```
     "exported_folder": "public"
     ```
 
     **command**: Command for building website. For Hugo I use `hugo -D`. Example:
     
-    ```json
+    ```
     "command": "hugo -D"
     ```
 
     **frequency**: In what frequency is websitefromgithub script checking if it's new version of source code on GitHub. The value is in minutes. Example:
    
-    ```json
+    ```
     "frequency": "60"
     ```
 
